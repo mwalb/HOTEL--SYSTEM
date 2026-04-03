@@ -1,4 +1,4 @@
-const API_URL="http://127.0.0.1:8000/hotel";
+const API_URL = process.env.NEXT_PUBLIC_API_URL!;
 
 // REGISTER USER
 export async function registerUser(username:string,email:string,password:string){
