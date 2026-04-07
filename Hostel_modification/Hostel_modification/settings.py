@@ -11,7 +11,9 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = os.environ.get("DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = ['*']
-CORS_ALLOWED_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    "https://hotel-system-eight.vercel.app",
+]
 CORS_ALLOW_HEADERS = list(default_headers) + ["authorization"]
 CORS_ALLOW_METHODS=[
   "GET",
