@@ -3,7 +3,7 @@ const API_URL = process.env.NEXT_PUBLIC_API_URL!;
 // REGISTER USER
 export async function registerUser(username:string,email:string,password:string){
 
-  const res = await fetch(`${API_URL}/register/`,{
+  const res = await fetch(`${API_URL}/hotel/register/`,{
     method:"POST",
     headers:{
       "Content-Type":"application/json"
